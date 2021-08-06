@@ -11,16 +11,36 @@ a {
   text-decoration: none;
 }
 
-.material-list {
+.container { /* ブラウザ中央に配置 */
+  width: 900px;
+  margin: auto;
+}
+.container:after { /* clearfix設定 */
+  content:"";
+  display:block;
+  clear:both;
+}
+.character-setting {
+  width: 25%;
+  float: left;
+}
+.needed-material {
+  width: auto;
+  float: right;
 }
 
+.level {
+  width: 40px;
+}
+
+.material-list {
+}
 .material {
   display: inline-block;
   position: relative;
   margin: 5px 0px 0px 5px;
   background-size: contain;
 }
-
 .material .name {
   color: white;
   position: absolute;
@@ -32,7 +52,6 @@ a {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
-
 .material .value {
   color: black;
   position: absolute;
@@ -43,7 +62,6 @@ a {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
-
 .material-image {
   width: 100px;
 }
