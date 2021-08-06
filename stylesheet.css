@@ -24,6 +24,7 @@ a {
 .material .name {
   color: white;
   position: absolute;
+  min-width: 90%;
   text-align: center;
   top: 40%;
   left: 50%;
@@ -44,5 +45,5 @@ a {
 }
 
 .material-image {
-
+  width: 100px;
 }
